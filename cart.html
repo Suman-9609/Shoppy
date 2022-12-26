@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShppyMall Ecommerce Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+</head>
+<body>
+    <section id="header">
+        <div class="logo__container">
+            <a href="#"><img src="img/logo5.png" class="logo" alt=""></a>
+        </div>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="cart.html"><i id="lg-bag" class="fas fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="fas fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+
+    <section id="page__header" class="about__header">
+        <h2>#KnowUs</h2>
+        <p>Save more with coupons & up to 70% off!</p>
+    </section>
+
+
+    <!-- <div class="cart section-p1">
+        <h2 class="cart-title">Your Cart</h2>
+
+        <div class="cart-content">
+            <div class="cart-box">
+                <img src="img/featured_product/f1.jpg" alt="" class="cart-img">
+                <div class="detail-box">
+                    <div class="cart-product-title">Earbuds</div>
+                    <div class="cart-price">$25</div>
+                    <input type="number" value="1" class="cart-quantity">
+                </div>
+
+                <a href="#"><i class="fas fa-trash-alt cart-remove"></i></a>
+            </div>
+        </div>
+
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+        </div>
+
+        <button type="button" class="normal btn-buy">Buy Now</button>
+ 
+        <i class="fas fa-times cart-close"></i>
+    </div> -->
+
+        <!-- cart start -->
+  <div id="cart" class="section-p1">
+    <div class="cart__header">
+        <h1>Your Cart</h1>
+    </div>
+    <div class="cart__box">
+        <div class="cart__img__container">
+            <img src="img/featured_product/f1.jpg" class="cart__img" alt="">
+        </div>
+        <hr>
+        <div class="cart__details">
+            <div class="cart__feature">
+                <h2>T-Shirt</h2>
+                <h4>Size : 6"</h4>
+                <span>Price : $ <span id="price">750</span></span>
+            </div>
+            <div class="cart__quantity">
+                <i class="fas fa-plus icon" onclick="increament('count', 'price', 'item')"></i>
+                <input type="button" value="0" id="count">
+                <i class="fas fa-minus icon" onclick="decreament('count', 'price', 'item')"></i>
+            </div>
+           <h6> $ <span id="item">00</span></h6>
+        </div>
+    </div>
+    <hr>
+    <div class="cart__box">
+        <div class="cart__img__container">
+            <img src="img/featured_product/f2.jpg" class="cart__img" alt="">
+        </div>
+        <hr>
+        <div class="cart__details">
+            <div class="cart__feature">
+                <h2>T-Shirt</h2>
+                <h4>Size : 6"</h4>
+                <span>Price : $ <span id="price1">850</span></span>
+            </div>
+            <div class="cart__quantity">
+                <i class="fas fa-plus icon" onclick="increament('count1','price1','item1')"></i>
+                <input type="button" value="0" id="count1">
+                <i class="fas fa-minus icon" onclick="decreament('count1', 'price1','item1')"></i>
+            </div>
+          <h6> $ <span id="item1">00</span></h6>
+        </div>
+    </div>
+    <div class="cart__total">
+        <h4>Product amount $<span id="itemTotal">00</span></h4>
+    </div>
+    <div class="cart__charge">
+        <h4>Delivery Charge $<span id="chargeAmnt">40</span></h4>
+    </div>
+    <div class="cart__total__amount">
+        <h4>Total Amount $ <span id="totAmnt">00</span> </h4>
+    </div>
+  </div>
+  <div class="shop__button">
+    <button class="normal" type="button">Shop Now</button>
+  </div>
+
+
+    <footer class="section-p1">
+        <div class="col">
+            <div class="footer__logo__container">
+                <a href="#"><img src="img/logo5.png" class="logo" alt=""></a>
+            </div>
+            <h4>Contact</h4>
+            <p><strong>Address :</strong> 562 College Halt, Street 32, West Bengal</p>
+            <p><strong>Phone :</strong> +01 1111 362 /(+91) 03 2314 6528</p>
+            <p><strong>Hours :</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-pinterest-p"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>            
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In`</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From Ap Store or Google Play</p>
+            <div class="row">
+                 <img src="img/pay/playStore.jpg" class="payment_logo" alt=""> 
+                <img src="img/pay/appleStore.jpg" class="payment_logo" alt=""> 
+            </div>
+            <p>Secured Payment Gateways</p>
+            <div class="gateway__Container">
+                <img src="img/pay/payment.png" alt="">
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy 2022, Suman etc - HTML CSS JAVASCRIPT Ecommerce Template</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
